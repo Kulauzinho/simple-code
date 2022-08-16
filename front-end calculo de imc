@@ -1,0 +1,28 @@
+from cProfile import label
+from cgitb import text
+from tkinter import *
+from turtle import width
+
+janela = Tk()
+
+janela.title("Calculadora IMC")
+janela.geometry("550x400")
+janela.configure(background= '#40E0D0')
+
+altura = Label(text="Qual a sua altura? ", background= "#40E0D0")
+altura.place(x=2, y=10, width= 120, height=40)
+
+altura_input = Entry() 
+altura_input.place(x=5, y=50, width= 120, height= 20 )
+
+peso = Label(text= "Qual o seu peso? ", background= "#40E0D0")
+peso.place(x= 2, y=100, width=120, height= 20 )
+
+peso_input = Entry()
+peso_input.place(x=5, y= 150, width= 120, height= 20)
+
+imc = Label(text="Seu índece de Massa Corpórea é de: ", background= "#40E0D0")
+imc.place(x=5, y=200, width= 250, height= 20)
+
+
+janela.mainloop()
